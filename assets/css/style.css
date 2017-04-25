@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Macondo');
+
+
+@font-face {
+	font-family: 'custom';
+	src: url('../fonts/jolt.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+*{
+	font-family:'helvetica';
+	color:#628;
+	box-sizing: border-box;
+	margin:0px;
+}
+
+body{
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	background-position: bottom right;
+	background-attachment: fixed;
+}
+
+		h1, h2 {
+			font-family: 'Macondo', cursive;
+		}
+
+.title{
+	font-size:50px;
+	color:#fff;
+}
+
+.custom{
+	font-family: 'custom';
+	text-align: center;
+	padding:20px;
+}
+
+/*nav*/
+header {
+	position: relative;
+	height:60px;
+	background-color: #628;
+}
+
+#logo{
+	height:100%;
+	padding:5px;
+	
+}
+
+nav{
+	position:absolute;
+	right:0px;
+	top:0px;
+	padding:0px;
+	margin:0px;
+}
+
+nav > ul{
+	margin:10px;
+}
+
+nav li ul{
+	display:none;
+}
+
+nav li:hover ul, nav ul li li{
+	display:block;
+}
+
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	vertical-align: top;
+}
+
+nav ul li ul{
+	margin:0px;
+	padding:0px;
+}
+
+nav a{
+	color:#fff;
+	background: linear-gradient( -45deg, #6ad,#19d 30%, #19d 70%, #6ad);
+	text-decoration: none;
+	padding:10px;
+	display: block;
+	width:100px;
+	text-align: center;
+}
+
+nav a:hover{
+	background: #f73;
+}
+.btn, .btn:focus, .btn:visited, .btn:active {
+	display:inline-block;
+	padding:10px;
+	background-color:#19d;
+	color:#fff;
+	text-decoration: none;
+	opacity:.5;
+}
+
+.btn:hover{
+	background-color: #f73;
+	opacity:1;
+}
+
+#type, #layout, #position, #flex, #animation, #selector, #cascadecontainer, #media{
+	max-width:950px;
+	margin:0px auto;
+}
+
+
+/*	cascading experiment part 2 external*/
+h6{
+	font-size:10px;
+}
+
+h6{
+	font-size:30px;
+}
+
+#cascadecontainer{
+	text-align: center;
+	padding:100px;
+	background:#fff;
+}
+
+.cascading{
+	font-size:30px;
+}
+
+#cascade{
+	font-size:50px;
+}
+
+div h6{
+	font-size:20px;
+}
+
+html body div #cascade{
+	font-size: 40px;
+}
+
+div .cascading{
+	font-size:30px;
+}
+
+div #cascade{
+	font-size:80px;
+}
+
+h6{
+	font-size: 20px!important;
+}
